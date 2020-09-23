@@ -1,0 +1,257 @@
+{
+    "Validate E-Mail Address": {
+        "prefix": "!valemail",
+        "body": "/[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/igm",
+        "description": "Validates the given email address"
+    },
+    "Validate Hexadecimal Color Value": {
+        "prefix": "!valhexcol",
+        "body": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+        "description": "Validates the given string to check if it is a valid Hexadecimal Color Value"
+    },
+    "Password Strength Validator": {
+        "prefix": "!valpass",
+        "body": "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!%*?&_])[A-Za-z\\d$@$!%*?&_]{${1:minlength},${2:maxlength}}$/",
+        "description": "Validates the provided password to check if it contains atleast 1 Upper Case, 1 Lower Case, 1 Special Char, 1 Number. The min value represents the minimum length and max represents maximum length"
+    },
+    "Validate ISBN Number": {
+        "prefix": "!valisbn",
+        "body": "/\\b(?:ISBN(?:: ?| ))?((?:97[89])?\\d{9}[\\dx])\\b/i",
+        "description": "Validates the given ISBN Number"
+    },
+    "Validate IPV4 Address": {
+        "prefix": "!valipv4",
+        "body": "/\\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\b/",
+        "description": "Validates the given IPV4 address"
+    },
+    "Validate IPV6 Address": {
+        "prefix": "!valipv6",
+        "body": "(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))",
+        "description": "Validates the given IPV6 address"
+    },
+    "Validate Date In mm/dd/yy": {
+        "prefix": "!valmmddyy",
+        "body": "/^[0-3]?[0-9](/|\\.|-)[0-3]?[0-9](/|\\.|-)[1-9]\\d{3}$/gi",
+        "description": "Validate the given date in dd/mm/yy (Does not care about the separator or the leading zeros)"
+    },
+    "Validate Date In mon/dd/yyyy": {
+        "prefix": "!valmonddyyyy",
+        "body": "/^(jan|feb|mar|apr|may|jun|jul|aug|sept?|oct|nov|dec)(/|\\.|-)[0-3]?[0-9](/|\\.|-)[1-9]\\d{3}$/gi",
+        "description": "Validates the given date in mon/dd/yyyy format (Ex: jan/23/2019)"
+    },
+    "Validate Month Name": {
+        "prefix": "!valmonth",
+        "body": "/^(jan(uary)?|feb(ruary)?|(mar)?ch|(apr)?il|may|(jun)?e|(jul)?y|(aug)?ust|sep(tember)?|sept|(oct)?ober|(nov)?ember|(dec)?ember)$/i;",
+        "description": "Validates month name both in full and abbreviated form (Ex: February or Feb)"
+    },
+    "Extract Price From String": {
+        "prefix": "!extprice",
+        "body": "(\\\\${1:currency_symbol}\\s?[0-9,]+(\\.[0-9]{2})?)",
+        "description": "Extract price value from any string (Add your currency symbol in the marked area)"
+    },
+    "Parse 'To' From E-mail Header": {
+        "prefix": "!parehead",
+        "body": "/\\b[A-Z0-9._%+-]+@(?:[A-Z0-9-]+\\.)+[A-Z]{2,6}\\b/i",
+        "description": "Parse an email header and retrieve 'To' value from it"
+    },
+    "Validate Facebook Profile Link": {
+        "prefix": "!valfblink",
+        "body": "(?:http://)?(?:www\\.)?facebook\\.com/(?:(?:\\w)*#!/)?(?:pages/)?(?:[\\w\\-]*/)*([\\w\\-]*)",
+        "description": "Validate the given facebook profile link"
+    },
+    "Validate Credit Card Number": {
+        "prefix": "!valcc",
+        "body": "^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\\d{3})\\d{11})$",
+        "description": "Validates Credit Card Number (Does'nt check for fake numbers) Supported Cards: Visa, MasterCard, American Express, Diners Club, Discover, and JCB"
+    },
+    "Validate Alphanumeric Username": {
+        "prefix": "!valusername",
+        "body": "/^[a-z0-9]{${1:MIN_CHARS},${2:MAX_CHARS}}$/i",
+        "description": "Simple Regex to validate an alphanumeric string based on the max and min length values"
+    },
+    "Extract URL From String": {
+        "prefix": "!exturl",
+        "body": "(http|ftp|https)://([\\w_-]+(?:(?:\\.[\\w_-]+)+))([\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])?",
+        "description": "Extract an URL from any string (With HTTP)"
+    },
+    "Get Internet Explorer Version": {
+        "prefix": "!getiever",
+        "body": "^.*MSIE [5-8](?:\\.[0-9]+)?(?!.*Trident/[5-9]\\.0).*$",
+        "description": "Get the version of Internet Explorer Being Used (To be used with a browser agent)"
+    },
+    "Validate Image Filenames": {
+        "prefix": "!valimage",
+        "body": "/^.+\\.(${1:jpg|jpeg|png|gif|bmp|svg})$/gi",
+        "description": "Validate the name of the image file (delete the names which are not requrired"
+    },
+    "Validate Words With Abbreviations": {
+        "prefix": "!valcityabbr",
+        "body": "/[a-zA-Z\\s]*, [A-Z][A-Z]/",
+        "description": "Validate words with abbreviated first 2 letters (Ex: California, CA)"
+    },
+    "Validate US Phone Numbers": {
+        "prefix": "!valusphone",
+        "body": "/^(\\+\\d{1,2}\\s)?\\(?\\d{3}\\)?[\\s.-]\\d{3}[\\s.-]\\d{4}$/",
+        "description": "Validate US Phone Numbers"
+    },
+    "Validate Social Security Number": {
+        "prefix": "!valssn",
+        "body": "/^[0-9]\\{3\\}-[0-9]\\{2\\}-[0-9]\\{4\\}$/",
+        "description": "Validate the given Social Security Number"
+    },
+    "Validate Zip Codes (5 or 9 digits)": {
+        "prefix": "!valzip",
+        "body": "/^[0-9]{5}(-[0-9]{4})?$/",
+        "description": "Validate the given Zip Code(5 or 9 digits only)"
+    },
+    "Match Anything Between HTML Tags": {
+        "prefix": "!valhtmlcont",
+        "body": "/<${1:tag_name}>(\\n|.)*</${1:tag_name}>/gi",
+        "description": "Will verify if the provided string contains that HTML tag with any content between them"
+    },
+    "Validate HTML Tag": {
+        "prefix": "!valhtmltag",
+        "body": "/</?[^>]+>/g",
+        "description": "Will verify if the provided string has either opening or closing html tags (Does not verify the valdity of the HTML Tag)"
+    },
+    "Validate Twitter Username": {
+        "prefix": "!valtwitter",
+        "body": "/^@?(\\w){1,15}$/",
+        "description": "Validates if the given string is a valid twitter username"
+    },
+    "Validate URL": {
+        "prefix": "!valurl",
+        "body": "/^(?:(?:(?:https?|ftp):)?//)(?:\\S+(?::\\S*)?@)?(?:(?!(?:10|127)(?:\\.\\d{1,3}){3})(?!(?:169\\.254|192\\.168)(?:\\.\\d{1,3}){2})(?!172\\.(?:1[6-9]|2\\d|3[0-1])(?:\\.\\d{1,3}){2})(?:[1-9]\\d?|1\\d\\d|2[01]\\d|22[0-3])(?:\\.(?:1?\\d{1,2}|2[0-4]\\d|25[0-5])){2}(?:\\.(?:[1-9]\\d?|1\\d\\d|2[0-4]\\d|25[0-4]))|(?:(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)(?:\\.(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)*(?:\\.(?:[a-z\\u00a1-\\uffff]{2,})))(?::\\d{2,5})?(?:[/?#]\\S*)?$/i",
+        "description": "Validates if the given string is a valid URL"
+    },
+    "Validate Google Search Syntax": {
+        "prefix": "!valgooglesyn",
+        "body": "/([+-]?(?:'.+?'|\".+?\"|[^+\\- ]{1}[^ ]*))/g",
+        "description": "Validates if the provided string is a valid google search syntax"
+    },
+    "Extract Media Query Properties": {
+        "prefix": "!extcssmedia",
+        "body": "/@media([^{]+)\\{([\\s\\S]+?})\\s*}/g",
+        "description": "Extract properties and values from CSS Media Queries"
+    },
+    "Remove HTML Comments From Code Block": {
+        "prefix": "!exthtmlcomms",
+        "body": "<!--(.*?)-->",
+        "description": "Strip all the comments from a HTML Code Block"
+    },
+    "Extract CSS Properties And Values": {
+        "prefix": "!extcss",
+        "body": "^\\s*[a-zA-Z\\-]+\\s*[:]{1}\\s[a-zA-Z0-9\\s.#]+[;]{1}",
+        "description": "Extract individual CSS Properties from the given string"
+    },
+    "Extract Youtube Video ID From URL": {
+        "prefix": "!extytid",
+        "body": "/http://(?:youtu\\.be/|(?:[a-z]{2,3}\\.)?youtube\\.com/watch(?:\\?|#\\!)v=)([\\w-]{11}).*/gi",
+        "description": "Extract the video ID from a valid Youtube Link"
+    },
+    "Extract Image Source From Img Tag": {
+        "prefix": "!extimgsrc",
+        "body": "\\< *[img][^\\>]*[src] *= *[\"\\']{0,1}([^\"\\'\\ >]*)",
+        "description": "Extrac the image's source from the provided HTML code block"
+    },
+    "Validate A Base64 String": {
+        "prefix": "!valbase64",
+        "body": "^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$",
+        "description": "Validate if the given string is Base64 compliant"
+    },
+    "Extract Domain Name From URL": {
+        "prefix": "!extdomain",
+        "body": "/https?://(?:[-\\w]+\\.)?([-\\w]+)\\.\\w+(?:\\.\\w+)?/?.*/i",
+        "description": "Extract the domain from a valid URL string"
+    },
+    "Seperate Thousands": {
+        "prefix": "!septhousand",
+        "body": "/\\d{1,3}(?=(\\d{3})+(?!\\d))/g",
+        "description": "Seperates the given numeric string with commas in thousands"
+    },
+    "Validate If Word/Char Exists": {
+        "prefix": "!valchars",
+        "body": "/${1: chars_to_be_searched}/",
+        "description": "Check if the string contains atleast one occurence of the provided search chars"
+    },
+    "Reduce Multiple Space To Single Space": {
+        "prefix": "!valspaces",
+        "body": "/\\s\\s+/g, ' '",
+        "description": "Converts multiple spaces to single spaces between all words in the given string"
+    },
+    "Extract Text Between Square Brackets": {
+        "prefix": "!extsqrbracks",
+        "body": "\\[([^]]+)\\]",
+        "description": "Extract the square brackets and the text between them from a string"
+    },
+    "Remove Alphanumeric Characters": {
+        "prefix": "!valalpnum",
+        "body": "/[^A-Za-z0-9 ]/",
+        "description": "Validate the given string for Non-Alphanumeric Characters"
+    },
+    "Extract JS/Angular Logs": {
+        "prefix": "!extlogs",
+        "body": "/^(\\s*)?[^/]{0,2}((\\$log|console)\\.(warn|log|info))(.*)$/gmi",
+        "description": "Regular Expression to find native Javascript console and AngularJS $log log warn or info that are NOT comments / commented out"
+    },
+    "Extract All Brackets With Contents": {
+        "prefix": "!extbrackscont",
+        "body": "/\\s*\\([^)]*\\)/', '",
+        "description": "Extract all brackets and the content between them from a given string"
+    },
+    "Add Links Tags To Strings That Are URLs": {
+        "prefix": "!addlinktag",
+        "body": "str.replace(/((http|https)://(\\w+:{0,1}\\w*@)?(\\S+)(:[0-9]+)?(/|/([\\w#!:.?+=&%@!\\-/]))?)/gi, '<a href=\"$1\">$1</a>');",
+        "description": "Adds Link Tags to all the strings that start with http or https (Full Function Provided)"
+    },
+    "Count The Number Of Ocurrences Of Chars In A String": {
+        "prefix": "!findocurrences",
+        "body": "(${1: string}.match(/${2: string_to_search}/g) || []).length;",
+        "description": "Provides a function to calculate the number of times the provided character(s) have appeared in the string (Returns 0 when no ocurrences found)"
+    },
+    "Validate UUID V1": {
+        "prefix": "!valuuidv1",
+        "body": "/^[0-9A-F]{8}-[0-9A-F]{4}-[1][0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$/i",
+        "description": "Validates if the code is a valid UUID v1 code"
+    },
+    "Validate UUID V2": {
+        "prefix": "!valuuidv2",
+        "body": "/^[0-9A-F]{8}-[0-9A-F]{4}-[2][0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$/i",
+        "description": "Validates if the code is a valid UUID v2 code"
+    },
+    "Validate UUID V3": {
+        "prefix": "!valuuidv3",
+        "body": "/^[0-9A-F]{8}-[0-9A-F]{4}-[3][0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$/i",
+        "description": "Validates if the code is a valid UUID v3 code"
+    },
+    "Validate UUID V4": {
+        "prefix": "!valuuidv4",
+        "body": "/^[0-9A-F]{8}-[0-9A-F]{4}-[4][0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$/i",
+        "description": "Validates if the code is a valid UUID v4 code"
+    },
+    "Validate UUID V5": {
+        "prefix": "!valuuidv5",
+        "body": "/^[0-9A-F]{8}-[0-9A-F]{4}-[5][0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$/i",
+        "description": "Validates if the code is a valid UUID v5 code"
+    },
+    "Extract Text Between Quotes": {
+        "prefix": "!extquotes",
+        "body": "([\"'])(?:(?=(\\?))\\2.)*?\\1",
+        "description": "Extracts any text between quotations (Works with nested quotes too)"
+    },
+    "Split String To n sized chunks": {
+        "prefix": "!splitnchunks",
+        "body": "/.{1,${1: end_size}}/g",
+        "description": "Splits the given string to n-sized chunks even if its size is not an exact multiple"
+    },
+    "Validate if the string ends with a particular character": {
+        "prefix": "!valendswith",
+        "body": "/.*[${1: character}]$/",
+        "description": "Checks if the provided string ends with the provided character"
+    },
+    "Convert to camelCase": {
+        "prefix": "!tocamel",
+        "body": "${1: string}.replace(/(?:^\\w|[A-Z]|\b\\w)/g, function(word, index) {return index === 0 ? word.toLowerCase() : word.toUpperCase();}).replace(/\\s+/g, '');",
+        "description": "Returns a function which converts the given string to camelCase"
+    }
+}
