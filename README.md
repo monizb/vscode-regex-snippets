@@ -1,9 +1,10 @@
 # Regex Snippets
 
-A VS Code Extension with a list of 50+ hand picked Regex Codes made as a part of an Egghead Challenge.
+A VS Code Extension with a list of 50+ hand picked Regex Code Snippets to make lives of many Developers much easier.
 
 ### Why This Extension?
-When the challenge was announced and the topics were told, I saw Regex one the list and thought "Oh, there will already be 100s of extensions out there for Regex Snippets". Well, I was wrong. I did not find even a single extension for the same so decided to take this up.
+There are no extensions for Regular Expressions Snippets on the Marketplace right now, this extension provides the most commonly used Regex Snippets so that you don't have to memorize the difficult syntax which in turn reduces development time.
+
 
 ### Snippets
 
@@ -11,7 +12,7 @@ The following table shows all the 50+ code snippets included within this extensi
 
 | Sl No.| Prefix | Description | Input Required |
 | ----------- | ----------- | ----------- | ----------- |
-| 1     | `!valemail` | Email Address Validation | N/A
+| 1  | `!valemail` | Email Address Validation | N/A
 | 2  | `!valhexcol` | Hexadecimal Color Validation | N/A
 | 3  | `!valpass` | Password Validation (1 uppercase,1 lowercase, 1 number, 1 special) | 2 Inputs: `min` and `max` length for the password
 | 4  | `!valisbn` | ISBN Number Validation | N/A
@@ -62,6 +63,18 @@ The following table shows all the 50+ code snippets included within this extensi
 | 49 | `!valendswith` | Check if the provided string ends with the given Character | 1 Input: `character` which the string should end with
 | 50 | `!extdomain` | Extract the domain from a valid URL string | N/A
 | 51 | `!tocamel` | Returns a function which converts the given string to camelCase | 1 Input: `string` to be replaced
+
+### Installation
+
+1. Install Visual Studio Code 1.10.0 or higher
+1. Launch Code
+1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
+1. Select `Install Extension`
+1. Choose the extension
+1. Reload Visual Studio Code
+
+### Contribution
+Any and every contribution to this repoitory is welcomed, if you would like to add new features, file a bug report or make contribution, please first create an issue using the appropriate template.
 
 ### Author
 Monish Basaniwal
