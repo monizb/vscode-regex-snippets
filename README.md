@@ -9,6 +9,8 @@
 
 A VS Code Extension with a list of 50+ hand picked Regex Code Snippets to make lives of many Developers much easier.
 
+Check it out here: https://marketplace.visualstudio.com/items?itemName=Monish.regexsnippets&ssr=false#version-history
+
 ### Why This Extension?
 There are no extensions for Regular Expressions Snippets on the Marketplace right now, this extension provides the most commonly used Regex Snippets so that you don't have to memorize the difficult syntax which in turn reduces development time.
 
