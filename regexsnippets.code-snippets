@@ -152,7 +152,7 @@
     "Extract Image Source From Img Tag": {
         "prefix": "!extimgsrc",
         "body": "\\< *[img][^\\>]*[src] *= *[\"\\']{0,1}([^\"\\'\\ >]*)",
-        "description": "Extrac the image's source from the provided HTML code block"
+        "description": "Extract the image's source from the provided HTML code block"
     },
     "Validate A Base64 String": {
         "prefix": "!valbase64",
