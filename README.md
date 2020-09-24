@@ -1,5 +1,8 @@
 # Regex Snippets
 
+![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+[![GitHub license](https://img.shields.io/github/license/thedevs-network/kutt.svg)](https://github.com/monizb/vscode-regex-snippets/blob/master/LICENSE.md)
+
 A VS Code Extension with a list of 50+ hand picked Regex Code Snippets to make lives of many Developers much easier.
 
 ### Why This Extension?
