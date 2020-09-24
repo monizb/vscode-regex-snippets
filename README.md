@@ -81,7 +81,7 @@ Requires VS Code Version `1.20.0` atleast
 4. Select `Install Extension`
 5. Choose the extension
 6. Reload Visual Studio Code
-7. Optionally find the extension file [here]() , launch VS Code , Goto the extensions tab click the 3 dots on top, Click install from VSIX File, Choose the downloaded file and done!
+7. Optionally find the extension file [here](https://github.com/monizb/vscode-regex-snippets/blob/master/regexsnippets-1.0.1.vsix) , launch VS Code , Goto the extensions tab click the 3 dots on top, Click install from VSIX File, Choose the downloaded file and done!
 
 ### Contribution
 Any and every contribution to this repoitory is welcomed, if you would like to add new features, file a bug report or make contribution, please first create an issue using the appropriate template.
