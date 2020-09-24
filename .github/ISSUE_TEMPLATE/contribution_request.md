@@ -1,20 +1,20 @@
 ---
-name: Contribution Request
-about: Suggest a new feature which you would like to add to this repository
+name: Snippet Request
+about: Suggest a new snippet which you would like to add to this repository
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-**What is your Idea?**
+**What is your Snippet About?**
 A clear and concise description of what your idea is
 
-**Describe the solution you are proposing to add**
+**Add the code snippet with explanation**
 A clear and concise description of what you want to happen.
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+**Has this code snippet been tested?**
+Has this been tested yet?
 
 **Additional context**
 Add any other context or screenshots about the contribution request here.

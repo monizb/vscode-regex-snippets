@@ -69,12 +69,15 @@ The following table shows all the 50+ code snippets included within this extensi
 
 ### Installation
 
+Requires VS Code Version `1.20.0` atleast
+
 1. Install Visual Studio Code 1.10.0 or higher
-1. Launch Code
-1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
-1. Select `Install Extension`
-1. Choose the extension
-1. Reload Visual Studio Code
+2. Launch Code
+3. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
+4. Select `Install Extension`
+5. Choose the extension
+6. Reload Visual Studio Code
+7. Optionally find the extension file [here]() , launch VS Code , Goto the extensions tab click the 3 dots on top, Click install from VSIX File, Choose the downloaded file and done!
 
 ### Contribution
 Any and every contribution to this repoitory is welcomed, if you would like to add new features, file a bug report or make contribution, please first create an issue using the appropriate template.
