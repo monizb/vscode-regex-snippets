@@ -18,19 +18,6 @@
     "contributes": {
         "snippets": [
             {
-                "language": "javascript",
-                "path": "./regexsnippets.code-snippets"
-            },
-            {
-                "language": "javascriptreact",
-                "path": "./regexsnippets.code-snippets"
-            },
-            {
-                "language": "typescript",
-                "path": "./regexsnippets.code-snippets"
-            },
-            {
-                "language": "javascriptangular",
                 "path": "./regexsnippets.code-snippets"
             }
         ]
