@@ -76,6 +76,7 @@ The following table shows all the 50+ code snippets included within this extensi
 | 49 | `!valendswith` | Check if the provided string ends with the given Character | 1 Input: `character` which the string should end with
 | 50 | `!extdomain` | Extract the domain from a valid URL string | N/A
 | 51 | `!tocamel` | Returns a function which converts the given string to camelCase | 1 Input: `string` to be replaced
+| 52 | `!valjwt` | Validates if the given string is a valid JSON Web Token (JWT)
 
 ### Installation
 
