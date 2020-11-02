@@ -261,7 +261,7 @@
     },
     "Validate JWT": {
         "prefix": "!valjwt",
-        "body": "^[A-Za-z0-9-_=]+\.[A-Za-z0-9-_=]+\.?[A-Za-z0-9-_.+/=]*$",
+        "body": "^[A-Za-z0-9-_=]+\\.[A-Za-z0-9-_=]+\\.?[A-Za-z0-9-_.+/=]*$",
         "description": "Validates if the given string is a valid JSON Web Token (JWT)"
     }
 }
