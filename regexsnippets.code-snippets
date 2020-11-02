@@ -258,5 +258,10 @@
         "prefix": "!valbracks",
         "body": "\\((?>\\((?<c>)|[^()]+|\\)(?<-c>))*(?(c)(?!))\\)",
         "description": "Validates if all paranthesis are properly balanced within the given string"
+    },
+    "Validate JWT": {
+        "prefix": "!valjwt",
+        "body": "^[A-Za-z0-9-_=]+\.[A-Za-z0-9-_=]+\.?[A-Za-z0-9-_.+/=]*$",
+        "description": "Validates if the given string is a valid JSON Web Token (JWT)"
     }
 }
