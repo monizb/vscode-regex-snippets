@@ -1,25 +1,25 @@
 {
-    "name": "regexsnippets",
-    "displayName": "Regex Snippets",
-    "description": "Easily Insert Popular Regex Codes Without Memorising Anything!",
-    "version": "1.0.1",
-    "publisher": "Monish",
-    "icon": "icon.png",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/monizb/vscode-regex-snippets"
-    },
-    "engines": {
-        "vscode": "^1.20.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "path": "./regexsnippets.code-snippets"
-            }
-        ]
-    }
+  "name": "regexsnippets",
+  "displayName": "Regex Snippets",
+  "description": "Easily Insert Popular Regex Codes Without Memorising Anything!",
+  "version": "1.0.1",
+  "publisher": "Monish",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monizb/vscode-regex-snippets"
+  },
+  "engines": {
+    "vscode": "^1.20.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "path": "./regexsnippets.code-snippets"
+      }
+    ]
+  }
 }
