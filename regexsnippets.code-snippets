@@ -56,7 +56,7 @@
     },
     "Validate Facebook Profile Link": {
         "prefix": "!valfblink",
-        "body": "(?:http://)?(?:www\\.)?facebook\\.com/(?:(?:\\w)*#!/)?(?:pages/)?(?:[\\w\\-]*/)*([\\w\\-]*)",
+        "body": "(?:http:\\/\\/)?(?:www\\.)?facebook\\.com/(?:(?:\\w)*#!/)?(?:pages/)?(?:[\\w\\-]*/)*([\\w\\-]*)",
         "description": "Validate the given facebook profile link"
     },
     "Validate Credit Card Number": {
@@ -71,7 +71,7 @@
     },
     "Extract URL From String": {
         "prefix": "!exturl",
-        "body": "(http|ftp|https)://([\\w_-]+(?:(?:\\.[\\w_-]+)+))([\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])?",
+        "body": "(http|ftp|https):\\/\\/([\\w_-]+(?:(?:\\.[\\w_-]+)+))([\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])?",
         "description": "Extract an URL from any string (With HTTP)"
     },
     "Get Internet Explorer Version": {
@@ -121,7 +121,7 @@
     },
     "Validate URL": {
         "prefix": "!valurl",
-        "body": "/^(?:(?:(?:https?|ftp):)?//)(?:\\S+(?::\\S*)?@)?(?:(?!(?:10|127)(?:\\.\\d{1,3}){3})(?!(?:169\\.254|192\\.168)(?:\\.\\d{1,3}){2})(?!172\\.(?:1[6-9]|2\\d|3[0-1])(?:\\.\\d{1,3}){2})(?:[1-9]\\d?|1\\d\\d|2[01]\\d|22[0-3])(?:\\.(?:1?\\d{1,2}|2[0-4]\\d|25[0-5])){2}(?:\\.(?:[1-9]\\d?|1\\d\\d|2[0-4]\\d|25[0-4]))|(?:(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)(?:\\.(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)*(?:\\.(?:[a-z\\u00a1-\\uffff]{2,})))(?::\\d{2,5})?(?:[/?#]\\S*)?$/i",
+        "body": "/^(?:(?:(?:https?|ftp):)?\\/\\/)(?:\\S+(?::\\S*)?@)?(?:(?!(?:10|127)(?:\\.\\d{1,3}){3})(?!(?:169\\.254|192\\.168)(?:\\.\\d{1,3}){2})(?!172\\.(?:1[6-9]|2\\d|3[0-1])(?:\\.\\d{1,3}){2})(?:[1-9]\\d?|1\\d\\d|2[01]\\d|22[0-3])(?:\\.(?:1?\\d{1,2}|2[0-4]\\d|25[0-5])){2}(?:\\.(?:[1-9]\\d?|1\\d\\d|2[0-4]\\d|25[0-4]))|(?:(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)(?:\\.(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)*(?:\\.(?:[a-z\\u00a1-\\uffff]{2,})))(?::\\d{2,5})?(?:[/?#]\\S*)?$/i",
         "description": "Validates if the given string is a valid URL"
     },
     "Validate Google Search Syntax": {
@@ -146,7 +146,7 @@
     },
     "Extract Youtube Video ID From URL": {
         "prefix": "!extytid",
-        "body": "/http://(?:youtu\\.be/|(?:[a-z]{2,3}\\.)?youtube\\.com/watch(?:\\?|#\\!)v=)([\\w-]{11}).*/gi",
+        "body": "/http:\\/\\/(?:youtu\\.be/|(?:[a-z]{2,3}\\.)?youtube\\.com/watch(?:\\?|#\\!)v=)([\\w-]{11}).*/gi",
         "description": "Extract the video ID from a valid Youtube Link"
     },
     "Extract Image Source From Img Tag": {
@@ -161,7 +161,7 @@
     },
     "Extract Domain Name From URL": {
         "prefix": "!extdomain",
-        "body": "/https?://(?:[-\\w]+\\.)?([-\\w]+)\\.\\w+(?:\\.\\w+)?/?.*/i",
+        "body": "/https?:\\/\\/(?:[-\\w]+\\.)?([-\\w]+)\\.\\w+(?:\\.\\w+)?/?.*/i",
         "description": "Extract the domain from a valid URL string"
     },
     "Seperate Thousands": {
@@ -201,7 +201,7 @@
     },
     "Add Links Tags To Strings That Are URLs": {
         "prefix": "!addlinktag",
-        "body": "str.replace(/((http|https)://(\\w+:{0,1}\\w*@)?(\\S+)(:[0-9]+)?(/|/([\\w#!:.?+=&%@!\\-/]))?)/gi, '<a href=\"$1\">$1</a>');",
+        "body": "str.replace(/((http|https):\\/\\/(\\w+:{0,1}\\w*@)?(\\S+)(:[0-9]+)?(/|/([\\w#!:.?+=&%@!\\-/]))?)/gi, '<a href=\"$1\">$1</a>');",
         "description": "Adds Link Tags to all the strings that start with http or https (Full Function Provided)"
     },
     "Count The Number Of Ocurrences Of Chars In A String": {
