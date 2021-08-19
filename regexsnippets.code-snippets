@@ -253,7 +253,7 @@
         "prefix": "!tocamel",
         "body": "${1: string}.replace(/(?:^\\w|[A-Z]|\b\\w)/g, function(word, index) {return index === 0 ? word.toLowerCase() : word.toUpperCase();}).replace(/\\s+/g, '');",
         "description": "Returns a function which converts the given string to camelCase"
-    }.
+    },
     "Balanced Paranthesis Validation": {
         "prefix": "!valbracks",
         "body": "\\((?>\\((?<c>)|[^()]+|\\)(?<-c>))*(?(c)(?!))\\)",
@@ -263,5 +263,61 @@
         "prefix": "!valjwt",
         "body": "^[A-Za-z0-9-_=]+\\.[A-Za-z0-9-_=]+\\.?[A-Za-z0-9-_.+/=]*$",
         "description": "Validates if the given string is a valid JSON Web Token (JWT)"
+    },
+    //Regex code to validate if the string is a valid JSON
+    "Validate JSON": {
+        "prefix": "!valjson",
+        "body": "^\\{(\\s|\\n\\s)*((\"\\w*\"):(\\s)*(\"\\w*\"|\\d*|(\\{(\\s|\\n\\s)*((\"\\w*\"):(\\s)*(\"\\w*(,\\w+)*\"|\\d{1,}|\\[(\\s|\\n\\s)*(\\{(\\s|\\n\\s)*((\"\\w*\"):(\\s)*((\"\\w*\"|\\d{1,}))((,(\\s|\\n\\s)*\"\\w*\"):(\\s)*(\"\\w*\"|\\d{1,}))*(\\s|\\n)*\\})){1}(\\s|\\n\\s)*(,(\\s|\\n\\s)*\\{(\\s|\\n\\s)*((\"\\w*\"):(\\s)*((\"\\w*\"|\\d{1,}))((,(\\s|\\n\\s)*\"\\w*\"):(\\s)*(\"\\w*\"|\\d{1,}))*(\\s|\\n)*\\})?)*(\\s|\\n\\s)*\\]))((,(\\s|\\n\\s)*\"\\w*\"):(\\s)*(\"\\w*(,\\w+)*\"|\\d{1,}|\\[(\\s|\\n\\s)*(\\{(\\s|\\n\\s)*((\"\\w*\"):(\\s)*((\"\\w*\"|\\d{1,}))((,(\\s|\\n\\s)*\"\\w*\"):(\\s)*(\"\\w*\"|\\d{1,}))*(\\s|\\n)*\\})){1}(\\s|\\n\\s)*(,(\\s|\\n\\s)*\\{(\\s|\\n\\s)*((\"\\w*\"):(\\s)*((\"\\w*\"|\\d{1,}))((,(\\s|\\n\\s)*\"\\w*\"):(\"\\w*\"|\\d{1,}))*(\\s|\\n)*\\})?)*(\\s|\\n\\s)*\\]))*(\\s|\\n\\s)*\\}){1}))((,(\\s|\\n\\s)*\"\\w*\"):(\\s)*(\"\\w*\"|\\d*|(\\{(\\s|\\n\\s)*((\"\\w*\"):(\\s)*(\"\\w*(,\\w+)*\"|\\d{1,}|\\[(\\s|\\n\\s)*(\\{(\\s|\\n\\s)*((\"\\w*\"):(\\s)*((\"\\w*\"|\\d{1,}))((,(\\s|\\n\\s)*\"\\w*\"):(\\s)*(\"\\w*\"|\\d{1,}))*(\\s|\\n)*\\})){1}(\\s|\\n\\s)*(,(\\s|\\n\\s)*\\{(\\s|\\n\\s)*((\"\\w*\"):(\\s)*((\"\\w*\"|\\d{1,}))((,(\\s|\\n\\s)*\"\\w*\"):(\\s)*(\"\\w*\"|\\d{1,}))*(\\s|\\n)*\\})?)*(\\s|\\n\\s)*\\]))((,(\\s|\\n\\s)*\"\\w*\"):(\\s)*(\"\\w*(,\\w+)*\"|\\d{1,}|\\[(\\s|\\n\\s)*(\\{(\\s|\\n\\s)*((\"\\w*\"):(\\s)*((\"\\w*\"|\\d{1,}))((,(\\s|\\n\\s)*\"\\w*\"):(\\s)*(\"\\w*\"|\\d{1,}))*(\\s|\\n)*\\})){1}(\\s|\\n\\s)*(,(\\s|\\n\\s)*\\{(\\s|\\n\\s)*((\"\\w*\"):(\\s)*((\"\\w*\"|\\d{1,}))((,(\\s|\\n\\s)*\"\\w*\"):(\"\\w*\"|\\d{1,}))*(\\s|\\n)*\\})?)*(\\s|\\n\\s)*\\]))*(\\s|\\n\\s)*\\}){1}))*(\\s|\\n)*\\}$",
+        "description": "Validates if the given string is a valid non array JSON"
+    },
+    "Validate Username of type test@test": {
+        "prefix": "!valspecialusername",
+        "body": "[^@/]+@[^@/]+",
+        "description": "Vlaidates if the given string is the form test@test"
+    },
+    "Multispace Replacement": {
+        "prefix": "!multispace",
+        "body": "\\s+",
+        "description": "Replaces all the spaces in the given string with a single space"
+    },
+    "Non-alphanumeric replacement": {
+        "prefix": "!nonalphanumeric",
+        "body": "[^a-zA-Z0-9]",
+        "description": "Replaces all the non-alphanumeric characters in the given string with a single space"
+    },
+    "Blank Line": {
+        "prefix": "!blankline",
+        "body": "^\\s*$",
+        "description": "Validates if the given string is a blank line"
+    },
+    "Positive integers": {
+        "prefix": "!positiveint",
+        "body": "^[1-9]+[0-9]*$",
+        "description": "Validates if the given string is a positive integer"
+    },
+    "Positive Decimal Values": {
+        "prefix": "!positivedecimal",
+        "body": "(^\\d*\\.?\\d*[0-9]+\\d*$)|(^[0-9]+\\d*\\.\\d*$)",
+        "description": "Validates if the given string is a positive decimal value"
+    },
+    "Positive Decimal Values with 1 decimal place": {
+        "prefix": "!positivedecimal1",
+        "body": "^\\d*\\.?\\d*[0-9]+\\d*$",
+        "description": "Validates if the given string is a positive decimal value with 1 decimal place"
+    },
+    "Social Security Number": {
+        "prefix": "!ssn",
+        "body": "[0-9]\\{3\\}-[0-9]\\{2\\}-[0-9]\\{4\\}",
+        "description": "Validates if the given string is a valid social security number"
+    },
+    "Date": {
+        "prefix": "!valdate",
+        "body": "^(0?[1-9]|1[012])[- /.](0?[1-9]|[12][0-9]|3[01])[- /.](19|20)\\d\\d$",
+        "description": "Validates if the given string is a valid date"
+    },
+    "Replace Font Tags": {
+        "prefix": "!replacefont",
+        "body": "<(FONT|font)([ ]([a-zA-Z]+)=(\"|\\')[^\"\\\\']+(\"|\\'))*[^>]+>([^<]+)(<\/FONT>|<\/font>",
+        "description": "Replaces all the font tags in the given string with a single space"
     }
 }

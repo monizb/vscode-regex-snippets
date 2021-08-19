@@ -32,6 +32,42 @@
             {
                 "language": "javascriptangular",
                 "path": "./regexsnippets.code-snippets"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./regexsnippets.code-snippets"
+            },
+            {
+                "language": "typescriptangular",
+                "path": "./regexsnippets.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./regexsnippets.code-snippets"
+            },
+            {
+                "language": "css",
+                "path": "./regexsnippets.code-snippets"
+            },
+            {
+                "language": "vue",
+                "path": "./regexsnippets.code-snippets"
+            },
+            {
+                "language": "vue-html",
+                "path": "./regexsnippets.code-snippets"
+            },
+            {
+                "language": "vue-template",
+                "path": "./regexsnippets.code-snippets"
+            },
+            {
+                "language": "vue-ts",
+                "path": "./regexsnippets.code-snippets"
+            },
+            {
+                "language": "python",
+                "path": "./regexsnippets.code-snippets"
             }
         ]
     }
