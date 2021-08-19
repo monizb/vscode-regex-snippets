@@ -107,7 +107,7 @@ Requires VS Code Version `1.20.0` atleast
 5. Choose the extension
 6. Reload Visual Studio Code
 7. Optionally find the extension file
-   [here](https://github.com/monizb/vscode-regex-snippets/blob/master/regexsnippets-1.0.1.vsix)
+   [here](https://github.com/monizb/vscode-regex-snippets/blob/master/regexsnippets-1.0.2.vsix)
    , launch VS Code , Goto the extensions tab click the 3 dots on top, Click
    install from VSIX File, Choose the downloaded file and done!
 
