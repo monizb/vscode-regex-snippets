@@ -15,7 +15,7 @@ A VS Code Extension with a list of 50+ hand picked Regex Code Snippets to make
 lives of many Developers much easier.
 
 Check it out here:
-https://marketplace.visualstudio.com/items?itemName=Monish.regexsnippets&ssr=false#version-history
+https://marketplace.visualstudio.com/items?itemName=Monish.regexsnippets
 
 ### Why This Extension?
 
