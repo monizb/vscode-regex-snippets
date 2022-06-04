@@ -30,7 +30,7 @@ development time.
 
 1. From the command palette `Ctrl+Shift+P` (Windows, Linux) or `Cmd+Shift+P` (OSX)
 2. Type `Insert Snippet` then select `Insert Snippet` ![image](https://user-images.githubusercontent.com/94578938/172023525-bdfe4203-494b-4c28-8e85-d61ece2924a1.png)
-4. Type `!` and you will get the list of snippets ![image](https://user-images.githubusercontent.com/94578938/172023558-1fdaaf3b-c939-4f8c-8618-15c7797d76b2.png)
+3. Type `!` and you will get the list of available snippets ![image](https://user-images.githubusercontent.com/94578938/172023558-1fdaaf3b-c939-4f8c-8618-15c7797d76b2.png)
 
 
 #### Method 2
@@ -116,8 +116,8 @@ Requires VS Code Version `1.20.0` atleast
 
 1. Install Visual Studio Code 1.10.0 or higher
 2. Launch Code
-3. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or
-   `Cmd`-`Shift`-`P` (OSX)
+3. From the command palette `Ctrl+Shift+P` (Windows, Linux) or
+   `Cmd+Shift+P` (OSX)
 4. Select `Install Extension`
 5. Choose the extension
 6. Reload Visual Studio Code
