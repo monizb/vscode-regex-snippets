@@ -24,6 +24,21 @@ right now, this extension provides the most commonly used Regex Snippets so that
 you don't have to memorize the difficult syntax which in turn reduces
 development time.
 
+### How Does It Work?
+
+#### Method 1
+
+1. From the command palette `Ctrl+Shift+P` (Windows, Linux) or `Cmd+Shift+P` (OSX)
+2. Type `Insert Snippet` then select `Insert Snippet` ![image](https://user-images.githubusercontent.com/94578938/172023525-bdfe4203-494b-4c28-8e85-d61ece2924a1.png)
+4. Type `!` and you will get the list of snippets ![image](https://user-images.githubusercontent.com/94578938/172023558-1fdaaf3b-c939-4f8c-8618-15c7797d76b2.png)
+
+
+#### Method 2
+1. In the editor, type `!` then hit `Ctrl+Space`
+2. Select the snippet you want, eg: `!addlinktag`
+![image](https://user-images.githubusercontent.com/94578938/172023427-8598cc67-d119-437f-9578-0c417b35cba7.png)
+
+
 ### Snippets
 
 The following table shows all the 50+ code snippets included within this
