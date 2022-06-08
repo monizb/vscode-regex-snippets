@@ -1,7 +1,7 @@
 {
     "Validate E-Mail Address": {
         "prefix": "!valemail",
-        "body": "/^[A-Z0-9!#$%&'*+/=?^_`{|}~-][A-Z0-9!#$%&'*+/=?^_`{|}~.-]*[A-Z0-9!#$%&'*+/=?^_`{|}~-]@[A-Z0-9][A-Z0-9-]*\\.[A-Z0-9-]*[A-Z0-9]$/igm",
+        "body": "/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/igm",
         "description": "Validates the given email address"
     },
     "Validate Hexadecimal Color Value": {
